@@ -36,7 +36,7 @@ void loop() {
   Serial.println(accel_z);
 
   // Check for alarm condition (Example: If movement is too high)
-  if (abs(accel_x) > 1.5 || abs(accel_y) > 1.5 || abs(accel_z) > 1.5) {
+  if (abs(accel_x) > 2.5 || abs(accel_y) > 2.5 || abs(accel_z) > 2.5) {
     alarm_status = true;  // Trigger alarm
     Serial.println("🚨 Alarm triggered! 🚨");
   } else {
